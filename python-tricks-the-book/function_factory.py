@@ -12,5 +12,11 @@ def make_candy_machine(base_favor):
 orange_candy_machine = make_candy_machine("오렌지")
 apple_candy_machine = make_candy_machine("사과")
 
-print("오렌지 기계: ", orange_candy_machine("치약"))
-print("사과 기계: ", apple_candy_machine("홍삼"))
+print("오렌지 기계:", orange_candy_machine("치약"))
+print("사과 기계:", apple_candy_machine("홍삼"))
+
+# 🖥️ 출력 결과
+"""
+오렌지 기계: 오렌지 치약맛 사탕
+사과 기계: 사과 홍삼맛 사탕
+"""
