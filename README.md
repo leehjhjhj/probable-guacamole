@@ -9,3 +9,8 @@ https://www.yes24.com/Product/Goods/68835284 <br>
 
 [폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/python-tricks-the-book)
 
+## Fundamentals of Software Architecture
+- 책정보
+https://product.kyobobook.co.kr/detail/S000001810445 <br>
+
+[폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/fundamentals-of-software-architecture)
