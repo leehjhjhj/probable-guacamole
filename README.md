@@ -14,3 +14,9 @@ https://www.yes24.com/Product/Goods/68835284 <br>
 https://product.kyobobook.co.kr/detail/S000001810445 <br>
 
 [폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/fundamentals-of-software-architecture)
+
+## Architecture Patterns With Python
+- 책정보
+https://www.yes24.com/Product/Goods/101818336 <br>
+
+[폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/architecture-patterns-with-python)
