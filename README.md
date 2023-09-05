@@ -3,11 +3,11 @@
 - 코드로 구현할 수 있으면 코드로 구현해보고, 최대한 프로젝트에 녹여내보자.
 <hr>
 
-## docker-book
+## docker-fast-book
 - 책정보
 https://www.yes24.com/Product/Goods/15291084 <br>
 
-[폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/docker-book)
+[폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/docker-fast)
 
 ## Python Tricks The BOOK
 - 책 정보
