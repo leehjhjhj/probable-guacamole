@@ -1,5 +1,3 @@
-# 책
-
 # 공간 기반 아키텍처 스타일
 
 ## 서론
@@ -11,7 +9,8 @@
 
 ## 토폴로지
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/89ea7b71-5606-43f6-9392-b3461d59bac2/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/82623407-c0e6-47d8-a720-183ef8b445a8)
+
 
 - 이 아키텍처는 튜플 공간에서 유래되었고, 튜플 공간은 공유 메모리를 통해 통신하는 **다중 병렬 프로세서**
 - 동기 제약 조건인 중앙 데이터베이스를 없애는 대신 `인메모리 데이터 그리드`를 활용
@@ -28,9 +27,7 @@
 - 단일 처리 장치도 가능하나, 대규모 애플리케이션은 기능별로 처리장치를 나눈다.
 
 ### 가상 미들웨어
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/18a2f140-d124-4229-875d-e8f067d2c2d6/Untitled.png)
-
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/84efeb74-f511-4650-8084-27d07dcd38a9)
 - 아키텍처 내부에서 데이터 동기화 및 요청 처리의 다양한 부분을 제어하는 인프라를 담당한다.
 - 메시징 그리드, 데이터 그리드, 처리 그리드, 배포 관리자로 구성
     - 메시징 그리드: 입력 요청과 세션 상태를 관리. 부하 분산 웹서버로 구현(엔진엑스)
@@ -40,7 +37,8 @@
 
 ### 데이터 펌프
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/e204e04a-a8f9-47ae-ab89-e8ee85dde14f/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/267b4e1d-2bbb-45f6-a285-bd3f4c05825a)
+
 
 - 데이터를 다른 프로세서에 보내 데이터베이스를 업데이트
 - 항상 비동기로 작동, 메모리 캐시와 데이터베이스의 최종 일관성 유지
@@ -67,18 +65,21 @@
 
 ## 클라우드 대 온프레미스 구현
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/ea1a0e4f-cb38-47c1-82a6-73dd696b4729/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/36b8e83a-af63-4da7-9c64-e69c7bc23789)
+
 
 - 물리 데이터베이스는 온프레미스 환경에, 처리장치, 가상 미들웨어를 클라우드에 배포할 수 있다.
 
 ## 복제 캐시 대 분산 캐시
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/6e292653-32e8-478c-aec1-01e18b61aa29/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/fe72348b-a880-4bd5-9690-a5576acd4744)
+
 
 - 복제 캐시는 공간 기반 아키텍처의 표본
 - 그러나 데이터량이 많거나 캐시 데이터가 빈번하게 업데이트 되는 경우 사용 불가능 → 데이터 일관성 문제
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/d2ff4c64-86c0-4ce7-a094-2e2f143f375d/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/dcec400a-d3d5-433d-a015-a72188a01daf)
+
 
 - 그런 경우 분산 캐시를 사용.
 - 처리장치에 내부 메모리에 저장하는게 아니고 동기 전용 프로토콜로 중앙 캐시 서버에 데이터를 액세스.
@@ -87,7 +88,8 @@
 
 ## 니어캐시
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/b4ad25d6-1bc4-4930-8649-63febc9d5f4a/Untitled.png)
+![image](https://github.com/leehjhjhj/reading-books/assets/102458609/030bbf98-e532-464b-a652-67841e0987af)
+
 
 - 풀 백킹 캐시, 프런트 캐시가 있다.
 - 프런트 캐시는 방출 정책을 따라 옛 항목을 삭제
