@@ -9,7 +9,8 @@
 
 # 토폴로지
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/b02e69d2-1ff0-4c6f-b16f-f60e04ace979/Untitled.png)
+<img width="533" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/a508e125-7cda-4de4-9b6c-0401a5ddf1ca">
+
 
 - 서비스 규모가 작고, 각 서비스에는 데이터베이스 및 기타 종속적인 컴포넌트가 독립적으로 작동
 
@@ -52,12 +53,14 @@
 
 - 모니터링, 로깅, 회로 차단기 같은 운영 관심사는 사이드카 패턴을 사용한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/87484542-9628-4780-8274-0c729e46eb67/Untitled.png)
+<img width="515" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/99cd3a5a-2bd4-4f48-b9be-312743b499aa">
+
 
 - 각 서비스마다 별도의 컴포넌트로 둔다. 이를 인프라 팀이나 해당 팀에 소유
 - 서비스 메시를 구축하면 모니터링, 로깅 등을 일원화하여 제어가 가능하다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/f088ac74-7be5-4a1e-be67-6af3e1274d68/Untitled.png)
+<img width="515" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/d07ff533-258c-4b31-83c9-42cd51fe2cfb">
+
 
 - 서비스 메시 자체는 개발자가 서비스를 전체적으로 엑세스 할 수 있는 콘솔 역할을 한다.
 - 요청이 왔을 때, **서비스 디스커버리 도구**를 거치게 하여 모니터링에 용이하게 함 ****
@@ -67,7 +70,8 @@
 - 유저 인터페이스와 백엔드도 분리되는 것이 좋다.
 - 단일 유저 인터페이스가 API레이어를 통해 호출하는 모놀리식 유저 인터페이스
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/d954eebd-c73a-4800-aace-6729cf8f9090/Untitled.png)
+<img width="519" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/7e537784-1312-4083-8c33-7102a7adf13a">
+
 
 - 위 사진과 같이 유저 인터페이스 레벨의 컴포넌트를 백엔드 서비스로 활용하여 동기적인 수준으로 세분화하는 마이크로프론트엔드
 - 유저인터페이스부터 백엔드 서비스까지 서비스 경계를 분리
@@ -82,20 +86,23 @@
 
 ## 코레오그래피와 오케스트레이션
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/43da0f5c-585e-4f74-a5af-4998aca5690a/Untitled.png)
+<img width="515" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/ff904bf0-044e-429a-87db-cfa2a5ae2b92">
+
 
 - 코레오그래피는 브로커 이벤트 기반의 아키텍처. 중재자가 없어 경계 콘텍스트에 충실
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/18d465d3-1a1f-4a45-b26c-93c8f0328c51/Untitled.png)
+<img width="503" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/3e3ebbde-cec6-4232-8b82-404c09bae7cd">
+
 
 - 여러 서비스를 중재할 때 이렇게 로컬 중재자를 만들 수 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/fe77c994-9a2c-4943-8a71-b49a8811b165/Untitled.png)
+<img width="523" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/69f4d93d-045c-4b87-bac2-083e47f8ab53">
+
 
 - 이렇게 복잡해지면 프런트 컨트롤 패턴이 생긴다.
 - 처음 호출된 서비스가 다른 서비스를 전체적으로 조정하는 중재자 역할을 수행
+<img width="521" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/748c8f97-0eca-4ab9-9818-66d130bd2826">
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/603473e7-9189-4590-9db7-5364f9c6eda1/Untitled.png)
 
 - 이렇게 비지니스 워크플로와 같은 중재자를 두면 커플링이 발생.
 - 하지만 이 서비스만 조정을 담당하므로 다른 서비스에 영향은 주지 않는다.
@@ -105,7 +112,8 @@
 - 모놀리식 애플리케이션과 달리 원자성 문제가 대두
 - 서비스 경계를 넘나드는 트랜잭션은 설계 단계에서 지나치게 세분화 한 것.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/19f14110-c29c-496f-9b95-062969c86b08/d075187f-c9ba-414a-8524-df9007e3b229/Untitled.png)
+<img width="541" alt="image" src="https://github.com/leehjhjhj/reading-books/assets/102458609/0c11b0bf-5a8c-4907-b8cf-db921f8236c6">
+
 
 - 위가 사가패턴이라고 한다.
 - 서비스는 여러 서비스 호출에 대해 중재장 역할을 하고, 트랜잭션을 조정한다.
