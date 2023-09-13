@@ -29,6 +29,5 @@ https://www.yes24.com/Product/Goods/101818336 <br>
 
 ## 쉽게 시작하는 쿠버네티스
 - 책정보
- <br>
 https://www.yes24.com/Product/Goods/116966896 <br>
 [폴더이동](https://github.com/leehjhjhj/reading-books/tree/main/kubernetes-makes-easy-start)
